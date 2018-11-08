@@ -1,24 +1,36 @@
 import data_storage
 from selenium import webdriver
 
-
 wb = webdriver.Firefox()
+
 
 def open_page():
     wb.get("https://www.wildberries.ru/")
 
-def enter_privatcabinet():
-    wb.find_element_by_link_text("Войти").click()
+
+def enter_page():
+    wb.find_element_by_link_text("Регистрация").click()
+    wb.find_element_by_class_name("auth-tabs-switch").click()
+
 
 def login_field():
-    wb.find_element_by_xpath("//input[@type='text']").send_keys(data_storage.username)
+    login = wb.find_element_by_css_selector("#Item_Login")
+    login.clear()
+    login.send_keys(data_storage.username)
 
 
 def password_field():
-    wb.find_element_by_xpath("//input[@type='password']").send_keys(data_storage.password1)
+    password = wb.find_element_by_name("Item.Password")
+    password.clear()
+    password.send_keys(data_storage.password1)
 
-def login_privatcabinet():
-    wb.find_element_by_id("signIn").click()
+
+def enter_button():
+    wb.find_element_by_class_name("auth-btn-login").click()
+
 
 def quit():
     wb.quit()
+
+
+
