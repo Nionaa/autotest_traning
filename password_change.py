@@ -28,5 +28,15 @@ def password_field():
 def enter_button():
     wb.find_element_by_class_name("auth-btn-login").click()
 
+def open_personalcab_main_page():
+    wb.find_element_by_link_text("Личный кабинет").click()
+
+
+def open_details_page():
+    wb.find_element_by_link_text("Мои данные").click()
+
+
+def pass_change_button():
+    wb.find_element_by_id("updatePassword").click()
 
 
