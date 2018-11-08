@@ -1,7 +1,7 @@
 import data_storage
 from selenium import webdriver
 
-wb = webdriver.Firefox()
+wb = webdriver.Chrome()
 
 
 def open_page():

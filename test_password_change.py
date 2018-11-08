@@ -9,3 +9,4 @@ def test_password_change_pass():
     password_change.open_personalcab_main_page()
     password_change.open_details_page()
     password_change.pass_change_button()
+

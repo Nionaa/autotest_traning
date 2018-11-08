@@ -1,7 +1,8 @@
 import data_storage
 from selenium import webdriver
 
-wb = webdriver.Firefox()
+
+wb = webdriver.Chrome()
 
 
 def open_page():
@@ -28,6 +29,7 @@ def password_field():
 def enter_button():
     wb.find_element_by_class_name("auth-btn-login").click()
 
+
 def open_personalcab_main_page():
     wb.find_element_by_link_text("Личный кабинет").click()
 
@@ -40,3 +42,10 @@ def pass_change_button():
     wb.find_element_by_id("updatePassword").click()
 
 
+def fill_oldpass_field():
+    # iframe1 = wb.find_elements_by_css_selector("#easyXDM_default4915_provider")
+    # wb.switch_to.frame(iframe1)
+
+    oldpass = wb.find_element_by_id("Item_OldPassword").click()
+    oldpass.clear()
+    oldpass.send_keys(data_storage.password1)
