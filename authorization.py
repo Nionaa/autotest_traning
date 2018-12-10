@@ -26,7 +26,9 @@ def password_field():
 def enter_button():
     wb.find_element_by_id("signIn").click()
 
+
 def quit():
+    wb.switch_to.default_content()
     wb.quit()
 
 
