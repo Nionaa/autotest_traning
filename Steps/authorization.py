@@ -1,4 +1,4 @@
-import data_storage
+from Precondition import data_storage
 from selenium import webdriver
 
 wb = webdriver.Chrome()
@@ -29,6 +29,15 @@ def enter_button():
 
 def quit():
     wb.quit()
+
+def aut_iframe():
+    open_page()
+    enter_page()
+    frame_switch()
+    login_field()
+    password_field()
+    enter_button()
+    quit()
 
 
 
