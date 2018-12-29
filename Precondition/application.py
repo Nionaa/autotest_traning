@@ -9,8 +9,10 @@ class Application:
         self.profile_page = ProfilePage(self.driver)
 
     def open_page(self):
-        wb = self.driver
-        wb.get("https://www.wildberries.ru/")
+        driver = self.driver
+        driver.get("https://www.wildberries.ru/")
 
-    def quit(self):
-        self.driver.quit()
+    # def quit(self):
+    #     driver = self.driver
+    #     driver.quit()
+
