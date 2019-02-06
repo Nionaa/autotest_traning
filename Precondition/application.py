@@ -2,8 +2,9 @@ from selenium import webdriver
 from Steps.authorization import Authorization
 from Steps.profile_page import ProfilePage
 
+
 class Application:
-    def __init__(self, base_url):
+    def __init__(self):
         self.wd = webdriver.Chrome()
         self.base_url = "https://www.wildberries.ru/"
         self.authorization = Authorization(self)

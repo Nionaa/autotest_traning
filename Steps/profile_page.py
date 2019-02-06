@@ -1,12 +1,12 @@
-class ProfilePage:
 
+class ProfilePage():
     def __init__(self, app):
         self.app = app
 
     def main_personal_cab_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text('Личный кабинет')
+        wd.find_element_by_class_name("user_menu").click()
 
     def profile_section(self):
         wd = self.app.wd
-        wd.find_element_by_link_txt('Профиль')
+        wd.find_element_by_link_text("Профиль").click()
