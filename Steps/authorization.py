@@ -1,31 +1,30 @@
 from Precondition import data_storage
 
-class Authorization:
-
-    def __init__(self,driver):
-        self.driver = driver
+class Authorization():
+    def __init__(self, app):
+        self.app = app
 
     def enter_page(self):
-        driver = self.driver
-        driver.find_element_by_link_text("Войти").click()
+        wd = self.app.wd
+        wd.find_element_by_link_text("Войти").click()
 
     def frame_switch(self):
-        driver = self.driver
-        driver.switch_to.frame(driver.find_element_by_tag_name("iframe"))
+        wd = self.app.wd
+        wd.switch_to.frame(wd.find_element_by_tag_name("iframe"))
 
     def login_field(self):
-        driver = self.driver
-        login = driver.find_element_by_css_selector("#Item_Login")
+        wd = self.app.wd
+        login = wd.find_element_by_css_selector("#Item_Login")
         login.clear()
         login.send_keys(data_storage.username)
 
     def password_field(self):
-        driver = self.driver
-        password = driver.find_element_by_css_selector("#Item_Password")
+        wd = self.app.wd
+        password = wd.find_element_by_css_selector("#Item_Password")
         password.clear()
         password.send_keys(data_storage.password1)
 
     def enter_button(self):
-        driver = self.driver
-        driver.find_element_by_id("signIn").click()
-        driver.switch_to.default_content()
+        wd = self.app.wd
+        wd.find_element_by_id("signIn").click()
+        wd.switch_to.default_content()

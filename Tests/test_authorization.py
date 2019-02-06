@@ -10,3 +10,4 @@ def test_authorization_pass():
 
 def enter_profile_page():
     profile_page.ProfilePage()
+

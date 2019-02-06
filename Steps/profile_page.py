@@ -1,13 +1,12 @@
-
 class ProfilePage:
 
-    def __init__(self,driver):
-        self.driver = driver
+    def __init__(self, app):
+        self.app = app
 
     def main_personal_cab_page(self):
-        driver = self.driver
-        driver.find_element_by_link_text('Личный кабинет')
+        wd = self.app.wd
+        wd.find_element_by_link_text('Личный кабинет')
 
     def profile_section(self):
-        driver = self.driver
-        driver.find_element_by_link_txt('Профиль')
+        wd = self.app.wd
+        wd.find_element_by_link_txt('Профиль')
