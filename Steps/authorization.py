@@ -1,3 +1,4 @@
+from selenium.common.exceptions import NoSuchElementException
 from Precondition import data_storage
 
 class Authorization():
@@ -29,6 +30,14 @@ class Authorization():
         wd.find_element_by_id("signIn").click()
         wd.switch_to.default_content()
 
+    def auth_check(self):
+        wd = self.app.wd
+        try:
+            wd.find_element_by_id("error")
+        except NoSuchElementException:
+            wd.find_element_by_css_selector("#Item_Password").send_keys(data_storage.password2)
+            wd.find_element_by_id("signIn").click()
+
     def auth_steps(self):
         wd = self.app.wd
         wd.find_element_by_link_text("Войти").click()
@@ -41,4 +50,5 @@ class Authorization():
         password.send_keys(data_storage.password1)
         wd.find_element_by_id("signIn").click()
         wd.switch_to.default_content()
+
 
