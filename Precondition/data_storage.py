@@ -1,7 +1,7 @@
-username = "wb.olya.test@yandex.ru"
+username = "*"
 
-password1 = "Yxmo659qweasd"
-password2 = "dfr2!ewQ@$5YH"
+password1 = "*"
+password2 = "*"
 
 
 BASE_URL = "https://www.wildberries.ru/"
