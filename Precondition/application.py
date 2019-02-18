@@ -1,14 +1,13 @@
 from selenium import webdriver
+from Precondition import data_storage
 from Steps.authorization import Authorization
 from Steps.update_pass import PassChange
 from Steps.navigation import Navigation_buttons
-from Precondition import data_storage
 
 
 class Application:
     def __init__(self):
         self.wd = webdriver.Chrome()
-        self.wd.implicitly_wait(10)
         self.base_url = data_storage.BASE_URL
         self.authorization = Authorization(self)
         self.navigation = Navigation_buttons(self)
@@ -20,3 +19,4 @@ class Application:
 
     def destroy(self):
         self.wd.quit()
+

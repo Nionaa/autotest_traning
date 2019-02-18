@@ -14,4 +14,3 @@ class Navigation_buttons():
     def profile_navigation(self):
         wd = self.app.wd
         wd.find_element_by_link_text("Профиль").click()
-
