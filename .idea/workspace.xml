@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d1b4036-f515-4cf6-ad79-63151f65a633" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_return_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Precondition/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Precondition/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Precondition/data_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Precondition/data_storage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Steps/authorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/authorization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Steps/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/navigation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_update_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_update_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steps/update_pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/update_pass.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,37 +32,52 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="__init__" value="1" />
-          <entry key="py" value="58" />
+          <entry key="py" value="64" />
           <entry key="test_enter_profilepage" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="60" />
+          <entry key="Python" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="58" />
-          <entry key="Python" value="7798" />
+          <entry key="Python" value="8643" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="58" />
-          <entry key="py" value="7798" />
+          <entry key="py" value="8643" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/test_update_password.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Steps/navigation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="238">
+              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Precondition/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,50 +85,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Steps/authorization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="38" lean-forward="true" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+            <state relative-caret-position="1071">
+              <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
-                <marker date="1550503983093" expanded="true" signature="152:181" ph="..." />
-                <marker date="1550503983093" expanded="true" signature="176:177" ph="..." />
-                <marker date="1550503983093" expanded="true" signature="227:232" ph="..." />
-                <marker date="1550503983093" expanded="true" signature="335:340" ph="..." />
-                <marker date="1550503983093" expanded="true" signature="454:459" ph="..." />
-                <marker date="1550503983093" expanded="true" signature="642:647" ph="..." />
-                <marker date="1550503983093" expanded="true" signature="841:846" ph="..." />
-                <marker date="1550503983093" expanded="true" signature="1223:1229" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/test_return_password.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="5" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Precondition/application.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#1#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conftest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="48" selection-start-column="48" selection-end-column="48" />
-              <folding>
-                <marker date="1550502369742" expanded="true" signature="115:116" ph="..." />
+                <marker date="1550505616009" expanded="true" signature="152:221" ph="..." />
+                <marker date="1550505616009" expanded="true" signature="216:217" ph="..." />
+                <marker date="1550505616009" expanded="true" signature="267:272" ph="..." />
+                <marker date="1550505616009" expanded="true" signature="404:409" ph="..." />
+                <marker date="1550505616009" expanded="true" signature="556:561" ph="..." />
+                <marker date="1550505616009" expanded="true" signature="778:783" ph="..." />
+                <marker date="1550505616009" expanded="true" signature="1016:1021" ph="..." />
+                <marker date="1550505616009" expanded="true" signature="1149:1154" ph="..." />
               </folding>
             </state>
           </provider>
@@ -126,20 +105,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Steps/update_pass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+            <state relative-caret-position="442">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding>
-                <marker date="1549558211341" expanded="true" signature="58:110" ph="..." />
+                <marker date="1550505847979" expanded="true" signature="58:110" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Precondition/data_storage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -170,21 +140,21 @@
         <option value="$PROJECT_DIR$/Tests/test_authorization.py" />
         <option value="$PROJECT_DIR$/Tests/test_enter_profilepage.py" />
         <option value="$PROJECT_DIR$/Steps/profile_page.py" />
-        <option value="$PROJECT_DIR$/Steps/update_pass.py" />
         <option value="$PROJECT_DIR$/Tests/lala.py" />
-        <option value="$PROJECT_DIR$/Precondition/data_storage.py" />
-        <option value="$PROJECT_DIR$/Steps/navigation.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
-        <option value="$PROJECT_DIR$/Precondition/application.py" />
-        <option value="$PROJECT_DIR$/Steps/authorization.py" />
         <option value="$PROJECT_DIR$/Tests/test_return_password.py" />
+        <option value="$PROJECT_DIR$/Precondition/data_storage.py" />
         <option value="$PROJECT_DIR$/Tests/test_update_password.py" />
+        <option value="$PROJECT_DIR$/Steps/authorization.py" />
+        <option value="$PROJECT_DIR$/Steps/navigation.py" />
+        <option value="$PROJECT_DIR$/Steps/update_pass.py" />
+        <option value="$PROJECT_DIR$/Precondition/application.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="662" />
-    <option name="y" value="255" />
+    <option name="x" value="734" />
+    <option name="y" value="426" />
     <option name="width" value="1399" />
     <option name="height" value="1092" />
   </component>
@@ -266,7 +236,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_update_password.py">
+  <component name="RunManager" selected="Python tests.pytest in test_return_password.py">
     <configuration name="application" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotest_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -363,8 +333,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_update_password.py" />
         <item itemvalue="Python tests.pytest in test_return_password.py" />
+        <item itemvalue="Python tests.pytest in test_update_password.py" />
         <item itemvalue="Python tests.pytest in test_authorization.py" />
         <item itemvalue="Python.application" />
         <item itemvalue="Python.lala" />
@@ -385,21 +355,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_update_password_py - 2019.02.18 at 18h 06m 46s.xml">
-      <configuration name="pytest in test_update_password.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_update_password_py - 2019.02.18 at 18h 07m 37s.xml">
-      <configuration name="pytest in test_update_password.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_update_password_py - 2019.02.18 at 18h 07m 54s.xml">
-      <configuration name="pytest in test_update_password.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_authorization_py - 2019.02.18 at 18h 09m 02s.xml">
-      <configuration name="pytest in test_authorization.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_update_password_py - 2019.02.18 at 18h 29m 30s.xml">
-      <configuration name="pytest in test_update_password.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_update_password_py - 2019.02.18 at 18h 30m 27s.xml">
       <configuration name="pytest in test_update_password.py" configurationId="tests" />
     </history-entry>
@@ -415,13 +370,28 @@
     <history-entry file="pytest_in_test_return_password_py - 2019.02.18 at 18h 33m 32s.xml">
       <configuration name="pytest in test_return_password.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_update_password_py - 2019.02.18 at 18h 47m 40s.xml">
+      <configuration name="pytest in test_update_password.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_update_password_py - 2019.02.18 at 18h 53m 12s.xml">
+      <configuration name="pytest in test_update_password.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_return_password_py - 2019.02.18 at 18h 53m 21s.xml">
+      <configuration name="pytest in test_return_password.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_update_password_py - 2019.02.18 at 18h 53m 41s.xml">
+      <configuration name="pytest in test_update_password.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_return_password_py - 2019.02.18 at 18h 53m 59s.xml">
+      <configuration name="pytest in test_return_password.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="662" y="255" width="1399" height="1092" extended-state="0" />
+    <frame x="734" y="426" width="1399" height="1092" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24981631" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24981631" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -429,7 +399,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32985386" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2453027" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.2453027" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3992891" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -457,20 +427,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/test_enter_profilepage" />
     <entry file="file://$PROJECT_DIR$/Tests/lala.py" />
-    <entry file="file://$PROJECT_DIR$/Steps/navigation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/test_authorization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Precondition/data_storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -484,61 +451,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_update_password.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_return_password.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Steps/update_pass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="442">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding>
-            <marker date="1549558211341" expanded="true" signature="58:110" ph="..." />
+            <marker date="1550505847979" expanded="true" signature="58:110" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Steps/authorization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+            <marker date="1550505616009" expanded="true" signature="152:221" ph="..." />
+            <marker date="1550505616009" expanded="true" signature="216:217" ph="..." />
+            <marker date="1550505616009" expanded="true" signature="267:272" ph="..." />
+            <marker date="1550505616009" expanded="true" signature="404:409" ph="..." />
+            <marker date="1550505616009" expanded="true" signature="556:561" ph="..." />
+            <marker date="1550505616009" expanded="true" signature="778:783" ph="..." />
+            <marker date="1550505616009" expanded="true" signature="1016:1021" ph="..." />
+            <marker date="1550505616009" expanded="true" signature="1149:1154" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Steps/navigation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Precondition/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="289">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
-            <element signature="e#1#31#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Precondition/data_storage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Steps/authorization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="38" lean-forward="true" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-            <marker date="1550503983093" expanded="true" signature="152:181" ph="..." />
-            <marker date="1550503983093" expanded="true" signature="176:177" ph="..." />
-            <marker date="1550503983093" expanded="true" signature="227:232" ph="..." />
-            <marker date="1550503983093" expanded="true" signature="335:340" ph="..." />
-            <marker date="1550503983093" expanded="true" signature="454:459" ph="..." />
-            <marker date="1550503983093" expanded="true" signature="642:647" ph="..." />
-            <marker date="1550503983093" expanded="true" signature="841:846" ph="..." />
-            <marker date="1550503983093" expanded="true" signature="1223:1229" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/test_return_password.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/test_update_password.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
