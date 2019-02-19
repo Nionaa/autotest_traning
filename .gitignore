@@ -1,4 +1,4 @@
 ﻿.idea
 .pytest_cache
 geckodriver.log
-/Precondition/data_storage.py
+\Precondition\data_storage.py

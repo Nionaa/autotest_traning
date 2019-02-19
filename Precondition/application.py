@@ -3,6 +3,8 @@ from Precondition import data_storage
 from Steps.authorization import Authorization
 from Steps.navigation import Navigation_buttons
 from Steps.update_pass import PassChange
+from Steps.email_change import EmailChange
+from Steps.svc_taker import SvsTaker
 
 
 class Application:
@@ -14,6 +16,8 @@ class Application:
         self.authorization = Authorization(self)
         self.navigation = Navigation_buttons(self)
         self.update_pass = PassChange(self)
+        self.email_change = EmailChange(self)
+        self.svc_taker = SvsTaker(self)
 
     # Переход по ссылке
     def open_page(self):

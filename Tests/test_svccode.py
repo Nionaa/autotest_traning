@@ -1,0 +1,10 @@
+def test_svccode_take(app_fixture):
+    app_fixture.open_page()
+    app_fixture.svc_taker.open_new_wind()
+    app_fixture.svc_taker.switch_to_new_window()
+    app_fixture.svc_taker.login_pass()
+    app_fixture.svc_taker.passwd_pass()
+    app_fixture.svc_taker.submit_button()
+    app_fixture.svc_taker.sms_log_finder()
+    app_fixture.svc_taker.number_search()
+    app_fixture.svc_taker.svc_code()

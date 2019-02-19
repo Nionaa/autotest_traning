@@ -1,4 +1,3 @@
-from selenium.common.exceptions import NoSuchElementException
 from Precondition import data_storage
 
 class Authorization():
