@@ -8,3 +8,4 @@ def test_svccode_take(app_fixture):
     app_fixture.svc_taker.sms_log_finder()
     app_fixture.svc_taker.number_search()
     app_fixture.svc_taker.svc_code()
+    app_fixture.svc_taker.return_window()

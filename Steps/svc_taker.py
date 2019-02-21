@@ -1,8 +1,6 @@
 from Precondition import data_storage
-from itertools import groupby
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+import time
+import re
 
 class SvsTaker:
     def __init__(self, app):
@@ -39,14 +37,44 @@ class SvsTaker:
     def number_search(self):
         wd = self.app.wd
         wd.find_element_by_xpath("//*[@id='carousel-content']/nav/form/div[3]/button[1]").click()
-        wd.switch_to.frame(wd.find_element_by_class_name("modal fade"))
+        time.sleep(2)
         number_field = wd.find_element_by_id("find-number")
         number_field.send_keys(data_storage.number)
         wd.find_element_by_xpath("//*[@id='find-panel']/div/div/div[3]/button[2]").click()
-        wd.switch_to.default_content()
+        time.sleep(2)
 
     def svc_code(self):
         wd = self.app.wd
-        strmess = wd.find_element_by_xpath("//*[@id='sms-list-content']/table/tbody/tr[1]/td[9]")
-        svc = [int(''.join(i)) for is_digit, i in groupby(strmess, str.isdigit) if is_digit]
-        print(svc)
+        message = wd.find_element_by_xpath("//*[@id='sms-list-content']/table/tbody/tr[1]/td[9]").text
+        numbers = re.split('\D', message)[32]
+        # global svc
+        svc = list(map(str, numbers))
+        return svc
+
+    def return_window(self):
+        wd = self.app.wd
+        wd.switch_to.window(wd.window_handles[0])
+
+    def svc_code_full(self):
+        wd = self.app.wd
+        wd.execute_script("window.open('');")
+        wd.switch_to.window(wd.window_handles[1])
+        wd.get(data_storage.SVS_URL)
+        login_form = wd.find_element_by_xpath("/html/body/div/div/div/section/form/div[1]/input")
+        login_form.send_keys(data_storage.myname)
+        pass_form = wd.find_element_by_xpath("/html/body/div/div/div/section/form/div[2]/input")
+        pass_form.send_keys(data_storage.mypassword)
+        wd.find_element_by_xpath("/html/body/div/div/div/section/form/div[3]/button").click()
+        wd.find_element_by_xpath("//*[@id='sidebar-menu']/div/ul/li[1]/a").click()
+        wd.find_element_by_xpath("//*[@id='sidebar-menu']/div/ul/li[1]/ul/li[1]/a").click()
+        wd.find_element_by_xpath("//*[@id='carousel-content']/nav/form/div[3]/button[1]").click()
+        time.sleep(2)
+        number_field = wd.find_element_by_id("find-number")
+        number_field.send_keys(data_storage.number)
+        wd.find_element_by_xpath("//*[@id='find-panel']/div/div/div[3]/button[2]").click()
+        time.sleep(2)
+        message = wd.find_element_by_xpath("//*[@id='sms-list-content']/table/tbody/tr[1]/td[9]").text
+        numbers = re.split('\D', message)[32]
+        # global svc
+        svc = list(map(str, numbers))
+        return svc
